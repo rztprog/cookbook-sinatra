@@ -1,19 +1,15 @@
 <h1>Who are you ?</h1>
 <h2><%= Time.now %></h2>
 
-<!-- 
-
 <ul>
-  <% [ "Papillard", "ssaunier" ].each do |username| %>
+  <% @test_array.each do |username| %>
     <li>
       <%= username %>
     </li>
   <% end %>
 </ul> 
 
--->
-
-<form action="/team/youare">
+<form action="/team/who">
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" placeholder="Prénom"><br>
   <label for="lname">Last name:</label><br>

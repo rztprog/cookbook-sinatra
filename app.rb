@@ -19,6 +19,7 @@ get "/about" do
 end
 
 get "/whoareyou" do
+  @test_array = ["hello", "world"]
   erb :whoareyou
 end
 
